@@ -26,9 +26,7 @@ SECRET_KEY = 'django-insecure-wk#(t#j2&_*d+%kouqfgg3+l*@ct()62nzk+*wauvt)y3khxeh
 DEBUG = True
 
 import os
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-if os.environ.get('CODESPACE_NAME'):
-    ALLOWED_HOSTS.append(f"{os.environ.get('CODESPACE_NAME')}-8000.app.github.dev")
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
+    'djongo',
+    'octofit_tracker',
     'core',
 ]
 
@@ -127,6 +127,8 @@ STATIC_URL = 'static/'
 
 # CORS settings
 CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_HEADERS = True
+CORS_ALLOW_ALL_METHODS = True
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
