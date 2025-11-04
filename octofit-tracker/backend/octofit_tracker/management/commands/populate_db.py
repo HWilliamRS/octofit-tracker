@@ -2,8 +2,9 @@ from django.core.management.base import BaseCommand
 from core.models import User, Team, Activity, Workout, Leaderboard
 from datetime import date
 
+
 class Command(BaseCommand):
-    help = 'Populate octofit_db with test data'
+    help = 'Populate the octofit_db database with test data'
 
     def handle(self, *args, **kwargs):
         # Clear existing data
