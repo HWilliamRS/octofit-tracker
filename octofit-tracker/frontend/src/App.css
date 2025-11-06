@@ -1,0 +1,121 @@
+
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  color: #2d2d2d;
+}
+
+.App {
+  text-align: center;
+  color: #2d2d2d;
+}
+
+
+.octofit-logo {
+  height: 48px;
+  width: auto;
+  margin-right: 16px;
+  vertical-align: middle;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #fff;
+  padding: 2px 6px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+
+.App-link, a, .nav-link {
+  color: #0077b6;
+  transition: color 0.2s;
+}
+.App-link:hover, a:hover, .nav-link:hover {
+  color: #00b4d8;
+  text-decoration: underline;
+}
+
+/* Navigation bar */
+.navbar {
+  background: linear-gradient(90deg, #0077b6 0%, #48cae4 100%) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+  color: #caf0f8 !important;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6, .card-title {
+  color: #0077b6;
+  font-weight: 700;
+}
+
+/* Tables */
+.table {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.table thead {
+  background: #48cae4;
+  color: #fff;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #e0f7fa;
+}
+.table-hover > tbody > tr:hover {
+  background-color: #caf0f8;
+}
+
+/* Buttons */
+.btn, .btn-primary {
+  background: linear-gradient(90deg, #00b4d8 0%, #0077b6 100%);
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  transition: background 0.2s, color 0.2s;
+}
+.btn:hover, .btn-primary:hover {
+  background: linear-gradient(90deg, #0077b6 0%, #00b4d8 100%);
+  color: #fff;
+}
+
+/* Card styling */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: none;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
